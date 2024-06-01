@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* Fonte importada */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+/* Variaveis */
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /* Fonte normal */
+    --fonte2: "Passion One", sans-serif; /* Fonte transportada */
+    --fonte3:  "Sriracha", cursive; /* Fonte transportada */
+}
+
+* {
+    margin: 0px;     /* Deixa mais grudado */
+    padding: 0px;    
+    font-size: 1em;  /* serve para fonte do padrão geral*/
+}
+
+html, body{
+    min-height: 100vh;     /* tamanho minimo do corpo */
+    background-color: darkgray;      /* Cor de fundo */
+    font-family: var(--fonte1); /* Fonte 1 da var */
+}
+
+header {
+    background-color: black;      /* Cor de fundo do titulo */
+    color: white;       /* Cor da letra do titulo */
+    text-align: center;      /* Titulo no centro */
+}
+
+header > h1 {
+    padding-top: 50px;      /* Afasta um pouco o titulo lá do topo */
+    font-variant: small-caps;      /* Muda fonte das letras */
+    font-family: var(--fonte2);   /* Fonte 2 da var */
+    font-size: 10vh;    /* Alarga ou diminui o titulo conforme o tamanho da tela */
+}
+
+header > p {
+    padding-bottom: 50px;    /* Da um espaço na parte debaixo do titulo igual lá em cima */
+}
+
+
+/* Serve para a parte de cima e para parte de baixo */
+header a, footer a {
+    color: white;         /* Deixa o "link" branco */
+    text-decoration: none;        /* Tira a linha (sublinhado do link) */
+    font-weight: bolder;       /* Deixa o link "negrito" mais grosso, uma especie de fonte */
+}
+
+
+/* serve para a cima e para baixo */
+header a:hover, footer a:hover {
+    text-decoration: underline;      /* Ao passar o mouse em cima deixar sublinhado, linha embaixo do texto/link */
+}
+
+section {
+    padding-top: 10vh;     /* 10% de espaço da altura */
+    padding-bottom: 10vh;     /* 10% de espaço de baixo */
+    line-height: 2em;      /* Espaçamento entre as linhas das letras */
+    padding-left: 30px;   /* Afasta pra dentro, afasta da esquerda */
+    font-family: var(--fonte3); /* Fonte 3 da var */
+    font-size: 3.5vh;  
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;    /* Cor de fundo do body (corpo) */
+    color: black;     /* Cor das letras (palavras) */
+}
+
+section.imagem {
+    background-color: rgba(27, 26, 26, 0.752);    /* Cor de fundo */
+    color: white;    /* Cor das letras */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.811);
+    background-attachment: fixed; /* Deixa imagem fixa no fundo */
+}
+
+section.imagem > p {
+    display: inline-block;   
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);  /* Deixa especificamente fundo do texto cinza escuro*/
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center; /* coloca a img em determinada posição */
+    background-size: cover; /* imagem cobri a tela toda independentemente da tela */
+}
+
+section#img02 {
+   background-image: url('../imagens/background002.jpg');
+   background-size: cover;
+}
+
+footer {
+    background-color: black;    /* Cor de fundo */
+    text-align: center;     /* Coloca texto no centro */
+    color: white;     /* Cores das letras */
+    padding: 10px;     /* Afasta dos dois lados, de cima e debaixo */
+}
